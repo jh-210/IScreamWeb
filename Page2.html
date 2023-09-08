@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <title>exported project</title>
+        <link rel="stylesheet" href="./test.css" />
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <div style="position: relative;">
+            <img src="Images/P2_Main.png" style="width: 100%; display: block; position: absolute;">
+            <div style="position: relative; padding-top: 0.3%;">
+                <img src="Images/MenuButton.png" style="width: 3%; padding-left: 1%;">
+                <img src="Images/HomeButton.png" style="width: 3%; padding-right: 1%; float:right" >
+                <img src="Images/SaveButton.png" style="width: 3%; padding-right: 1%; float:right" >
+            </div>
+            <div style="position:relative; padding-top: 23.5%; padding-left: 13%;">
+                <img src="Images/까치.png" id="C1_T" style="width: 10%; position: absolute;">
+                <img src="Images/clickBox.png" style="width: 10%; position: absolute;" id="C1_B" onclick= "ClickBox('C1_B', 'C1_T');">
+
+                <img src="Images/복주머니.png" id="C2_T" style="width: 10%; position: absolute; margin-left: 40.5%;">
+                <img src="Images/clickBox.png" style="width: 10%; position: absolute; margin-left: 40.5%" id="C2_B" onclick= "ClickBox('C2_B', 'C2_T');">
+            </div>
+            <div style="position:relative; margin-top:5%; padding-left: 13%;">
+                <img src="Images/설빔.png" id="C3_T" style="width: 10%; position: absolute; margin-left: 10%;" onclick ="ClickText('C3_B');">
+                <img src="Images/설빔t.png" id="C3_T_info" style="width: 40%; position: absolute; margin-left: -5%; margin-top: 3.5%; visibility: hidden; z-index: 1;" >
+                <img src="Images/clickBox.png" style="width: 10%; position: absolute; margin-left: 10%;" id="C3_B" onclick= "ClickBox('C3_B', 'C3_T');">
+            </div>
+            <div style="position:relative; margin-top:10%; padding-left: 13%;">
+                <img src="Images/세배.png" id="C4_T" style="width: 10%; position: absolute; margin-left: 10%;">
+                <img src="Images/clickBox.png" style="width: 10%; position: absolute; margin-left: 10%;" id="C4_B" onclick= "ClickBox('C4_B', 'C4_T');">
+            
+                <img src="Images/덕담.png" id="C5_T" style="width: 10%; position: absolute; margin-left: 41.5%;" onclick ="ClickText('C5_B');">
+                <img src="Images/덕담t.png" id="C5_T_info" style="width: 40%; position: absolute; margin-left: 26%; margin-top: 3.5%; visibility: hidden; z-index: 1;" >
+                <img src="Images/clickBox.png" style="width: 10%; position: absolute; margin-left: 41.5%;" id="C5_B" onclick= "ClickBox('C5_B', 'C5_T');">
+            </div>
+            <div style="position:relative; margin-top: 16.8%; padding-left: 9.8%;">
+                <img src="Images/떡국.png" id="C6_T" style="width: 10%; position: absolute; margin-left: 10%;">
+                <img src="Images/clickBox.png" style="width: 10%; position: absolute; margin-left: 10%;" id="C6_B" onclick= "ClickBox('C6_B', 'C6_T');">
+            </div>
+            <div style="position:relative; margin-right: 15.2%; margin-top :-1%;" align ="right" >
+                <img src="Images/Btn_Side.png" id="C6_T" style="width: 8%; position: absolute; margin-left: 10%;" onclick = "BacktoP1()">
+            </div>
+        </div>
+        <script src="test.js"></script>
+    </body>
