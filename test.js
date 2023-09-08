@@ -1,5 +1,8 @@
 var P1Steps=0;
 
+var P2Steps=0;
+var P2Steps_=0;
+
 function ClickBtn(x)
 {
     var img1 = document.getElementById('T1');
@@ -42,10 +45,11 @@ function BacktoP1()
 function ClickBox(btn, txt)
 {
     var button = document.getElementById(btn);
-    var txtImg = document.getElementById(txt);
     
     button.style.visibility = 'hidden';
     
+    P2Steps+=1;
+    console.log(P2Steps);
 }
 
 function ClickText(btn)
@@ -58,6 +62,7 @@ function ClickText(btn)
         if(info.style.visibility=='hidden')
         {
             info.style.visibility='visible';
+            if(P2Steps_<2) P2Steps_++;
         }
         else info.style.visibility='hidden';
     }
@@ -67,7 +72,29 @@ function ClickText(btn)
         if(info.style.visibility=='hidden')
         {
             info.style.visibility='visible';
+            if(P2Steps_<2) P2Steps_++;
         }
         else info.style.visibility='hidden';
     }
+}
+
+function GotoP3()
+{
+    if(P2Steps>14 && P2Steps_==2)
+    {
+        P2Steps=0;
+        P2Steps_=0;
+        location.replace('Page3.html');
+    }
+    P2Steps++;
+}
+
+function GotoP4()
+{
+
+}
+
+function test()
+{
+    alert('test');
 }
