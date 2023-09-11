@@ -3,6 +3,8 @@ var P1Steps=0;
 var P2Steps=0;
 var P2Steps_=0;
 
+var P4Image = 0;
+
 function ClickBtn(x)
 {
     var img1 = document.getElementById('T1');
@@ -89,9 +91,92 @@ function GotoP3()
     P2Steps++;
 }
 
-function GotoP4()
+function BacktoP3()
 {
+    location.replace('Page3.html');
+}
 
+function GotoP4_Img()
+{
+    console.log(P4Image);
+    location.replace('Page4_1.html');
+    ImageSwitch(0);
+}
+
+function ImageSwitch(num)
+{
+    P4Image=P4Image+num;
+
+    var btn_back_off = document.getElementById('back_off');
+    var btn_back_on = document.getElementById('back_on');
+    var btn_go_off = document.getElementById('go_off');
+    var btn_go_on = document.getElementById('go_on');
+
+    var Img1 = document.getElementById('P4_Img1');
+    var Img2 = document.getElementById('P4_Img2');
+    var Img3 = document.getElementById('P4_Img3');
+    var Img4 = document.getElementById('P4_Img4');
+
+    var Img1_ = document.getElementById('P4_Img1_');
+    var Img2_ = document.getElementById('P4_Img2_');
+    var Img3_ = document.getElementById('P4_Img3_');
+    var Img4_ = document.getElementById('P4_Img4_');
+
+    Img1.style.visibility='hidden';
+    Img2.style.visibility='hidden';
+    Img3.style.visibility='hidden';
+    Img4.style.visibility='hidden';
+
+    if(Img1_ != null)
+    {
+        Img1_.style.visibility='hidden';
+        Img2_.style.visibility='hidden';
+        Img3_.style.visibility='hidden';
+        Img4_.style.visibility='hidden';
+    }
+
+    if(P4Image==0)
+    {
+        btn_back_off.style.visibility='visible';
+        btn_back_on.style.visibility='hidden';
+        btn_go_off.style.visibility='hidden';
+        btn_go_on.style.visibility='visible';
+        
+        Img1.style.visibility='visible';
+        if(Img1_!=null) Img1_.style.visibility='visible';
+    }
+    else if(P4Image == 3)
+    {
+        btn_back_off.style.visibility='hidden';
+        btn_back_on.style.visibility='visible';
+        btn_go_off.style.visibility='visible';
+        btn_go_on.style.visibility='hidden';
+
+        Img4.style.visibility='visible';
+        if(Img4_!=null) Img4_.style.visibility='visible';
+    }
+    else
+    {
+        btn_back_off.style.visibility='hidden';
+        btn_back_on.style.visibility='visible';
+        btn_go_off.style.visibility='hidden';
+        btn_go_on.style.visibility='visible';
+        if(P4Image == 1)
+        {
+            Img2.style.visibility='visible';
+            if(Img2_!=null) Img2_.style.visibility='visible';
+        }
+        else
+        {
+            Img3.style.visibility='visible';
+            if(Img3_!=null) Img3_.style.visibility='visible';
+        }
+    }
+}
+
+function BacktoP4()
+{
+    location.replace('Page4.html');
 }
 
 function test()

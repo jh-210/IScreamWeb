@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <title>exported project</title>
+        <link rel="stylesheet" href="./test.css" />
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <div style="position: relative; ">
+            <div style="width:100%; position: relative; margin-top: 2%; margin-left: 40%;" align ="center">
+                <img src="Images/14.png" id="P4_Img1_" style="width: 6.5%; position:absolute">
+                <img src="Images/24.png" id="P4_Img2_" style="width: 6.5%; position:absolute; visibility: hidden">
+                <img src="Images/34.png" id="P4_Img3_" style="width: 6.5%; position:absolute; visibility: hidden">
+                <img src="Images/44.png" id="P4_Img4_" style="width: 6.5%; position:absolute; visibility: hidden">
+                <img src="Images/btn_close.png" style="width: 6.5%; margin-left: 7%;" onclick = "BacktoP4()">
+            </div>
+            <div style="position: relative;" >
+                <div style="float: left; width: 33%; margin-left: -5%;" align ="center">
+                    <img src="Images/btn_arrow_back_off.png" id="back_off" style="width: 5%; position: absolute; margin-top: 23%;" align ="center">
+                    <img src="Images/btn_arrow_back_on.png" id="back_on" style="width: 5%; position: absolute; margin-top: 23%; visibility: hidden;" align ="center" onclick="ImageSwitch(-1)">
+                    
+                </div>
+                <div style="float: left; width: 33%; margin-left: 3%; margin-top: 3%;" align ="center">
+                    <img src="Images/P4_Img1.png" id="P4_Img1" style="width: 55%;  position: absolute;" align ="center">
+                    <img src="Images/P4_Img2.png" id="P4_Img2" style="width: 60%;  position: absolute; margin-top: 5%; margin-left: 0%; visibility: hidden;" align ="center">
+                    <img src="Images/P4_Img3.png" id="P4_Img3" style="width: 60%;  position: absolute; margin-top: 5%; margin-left: 0%; visibility: hidden;" align ="center">
+                    <img src="Images/P4_Img4.png" id="P4_Img4" style="width: 60%;  position: absolute; margin-top: 5%; margin-left: 0%; visibility: hidden;" align ="center">
+                </div>
+                <div style="float: right; width: 33%; margin-right: 0%" align ="center">
+                    <img src="Images/btn_arrow_go_off.png" id="go_off" style="width: 5%; position: absolute; margin-top: 23%; visibility: hidden;" align ="center">
+                    <img src="Images/btn_arrow_go_on.png"  id="go_on"style="width: 5%; position: absolute; margin-top: 23%;" align ="center" onclick="ImageSwitch(1)">
+                </div>
+            </div>
+            <div style="position:relative; margin-right: 15.2%; margin-top :38%;" align ="right" >
+                <img src="Images/Btn_Side.png" id="Backbtn" style="width: 8%; position: absolute; margin-left: 10%;" onclick = "BacktoP4()">
+            </div>
+        </div>
+        <script src="test.js"></script>
+    </body>
