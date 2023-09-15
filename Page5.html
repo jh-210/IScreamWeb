@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <title>exported project</title>
+        <link rel="stylesheet" href="./test.css" />
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <div style="position: relative; " onclick="P5_CloseInfo()">
+            <img src="Images/P5_Main.png" style="width: 100%; display: block; position: absolute;">
+            <div style="position: relative; padding-top: 0.3%;">
+                <img src="Images/MenuButton.png" style="width: 3%; padding-left: 1%;"onclick="test()">
+                <img src="Images/HomeButton.png" style="width: 3%; padding-right: 1%; float:right" onclick="test()">
+                <img src="Images/SaveButton.png" style="width: 3%; padding-right: 1%; float:right" onclick="test()">
+            </div>
+
+            <div style="position: relative;">
+                <img src="Images/Rectangle 457.png" style="width: 6.5%; margin-left: 18%; margin-top: 7%; opacity: 0;"onclick="test()">
+            </div>
+            <div style="position: relative;">
+                <img src="Images/Rectangle 457.png" style="width: 6.5%; margin-left: 33%; margin-top: 0%; opacity: 0;"onclick="ClickInfo('info1')">
+                <img src="Images/명절.png" id="info1" style="width: 35%; margin-left: -6%; margin-top: 3%; position:absolute; visibility: hidden;"onclick="ClickInfo('info1')">
+                <img src="Images/Rectangle 457.png" style="width: 6.5%; margin-left: 5.5%; margin-top: 0%; opacity:0;"onclick="ClickInfo('info2')">
+                <img src="Images/절기.png" id="info2" style="width: 35%; margin-left: -5%; margin-top: 3%; position:absolute; visibility: hidden;"onclick="ClickInfo('info2')">
+            </div>
+            <div style="position: relative;">
+                <img src="Images/Rectangle 457.png" style="width: 15%; margin-left: 1.5%; margin-top: 22%; opacity:0; position:absolute"onclick="ClickInfo('info3')">
+                <img src="Images/말풍선.png" id="info3" style="width: 18%; margin-left: 5%; margin-top: 10%; visibility:hidden; position:absolute">
+                <img src="Images/icn_zoom_in.png" style="width: 3%; margin-left: 47.5%; margin-top: 29%; " onclick="GotoP5_Img(0)">
+                <img src="Images/icn_zoom_in.png" style="width: 3%; margin-left: 20.3%; margin-top: 22%; " onclick="GotoP5_Img(1)">
+                <img src="Images/icn_zoom_in.png" style="width: 3%; margin-left: 20%; margin-top: 22%; " onclick="GotoP5_Img(2)">
+            </div>
+            
+            <div style="position:relative; margin-right: 15.2%; margin-top :21%;" align ="right" >
+                <img src="Images/Btn_Side.png" id="Backbtn" style="width: 8%; position: absolute; margin-left: 10%;" onclick = "BacktoP3()">
+            </div>
+        </div>
+        <script src="test.js"></script>
+    </body>
